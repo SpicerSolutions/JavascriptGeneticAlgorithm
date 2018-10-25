@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Genetic Algorithm Written in Javascript</title>
+		<script type="text/javascript" src="geneticalgorithm.js"></script>
+	</head>
+	<body>
+		<p>Search term</p>
+		<input type="text" name="phrase" id="phrase" value="to be or not to be" />
+		<p>Mutation rate (0.01 = 1%)</p>
+		<input type="text" name="mutation" id="mutation" value="0.01" />
+		<p>Population size</p>
+		<input type="text" name="populous" id="populous" value="1000" />
+		<p>Target fitness (0.94 = 94%)</p>
+		<input type="text" name="targetFitness" id="targetFitness" value="0.94" />		
+		<p><strong>WARNING!</strong> this is very processor intensive and might crash your browser (I take no responsibility)</p>		
+		<button onClick="javascript:go();">Run with these settings!</button>
+		<textarea style="width: 100%; height: 800px" id="output"></textarea>
+	</body>
+</html>
